@@ -40,9 +40,11 @@ test:
     - gridtest.client.update
     - gridtest.client.shell
     - gridtest.client.generate
+    - gridtest.client.gridview
     - gridtest.main
     - gridtest.main.check
     - gridtest.main.generate
+    - gridtest.main.grids
     - gridtest.main.helpers
     - gridtest.main.substitute
     - gridtest.main.test
