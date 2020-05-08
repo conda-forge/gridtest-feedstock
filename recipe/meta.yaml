@@ -1,5 +1,5 @@
 {% set name = "gridtest" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b0ab118ba07232270760ac96aa530e4b45291f501c18299ca7918605b047d3d9
+  sha256: 9454d0b8bf92c7561f34b40a3274e635a7197f360104e1a2d73cc99993b23c1f
 
 build:
   number: 0
@@ -62,7 +62,7 @@ about:
   license: MPL-2.0
   license_family: OTHER
   license_file: LICENSE
-  summary: 'generate grid testing for Python modules and functions'
+  summary: generate grid testing for Python modules and functions
   description: |
     GridTest is a small python library that will read in one or more python
     scripts or modules, and generate a testing file that can be used to run grid
