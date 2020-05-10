@@ -1,5 +1,5 @@
 {% set name = "gridtest" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9454d0b8bf92c7561f34b40a3274e635a7197f360104e1a2d73cc99993b23c1f
+  sha256: 16c60500bfa04e1497cc84db5cd879928ef7010d738224b40c61674b4bc80910
 
 build:
   number: 0
