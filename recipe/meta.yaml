@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 6cf2215b0bbd6cbe42b55ce9ced8d0ff28b379ba340473e93597eb95e41c82ed
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - gridtest=gridtest.client:main
@@ -19,14 +19,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3
+    - python {{ python_min }}
     - pytest-runner
   run:
-    - python >=3
+    - python >={{ python_min }}
     - pyaml
     - json_tricks
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - gridtest
     - gridtest.decorators
